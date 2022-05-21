@@ -1,27 +1,166 @@
-# ContestDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+# Contest Dashboard
 
-## Development server
+A web application to keep track of online contests
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## API Reference
 
-## Code scaffolding
+#### Get user info
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```http
+  GET /cf/info/:handles
+```
 
-## Build
+| Authorization | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your codeforces API key |
+| `api_secret` | `string` | **Required**. Your codeforces API secret |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `handles`      | `string` | **Required**. Semicolon-separated list of handles
+ 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Get user rating
 
-## Running end-to-end tests
+```http
+  GET /cf/rating/:handle
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+| Authorization | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your codeforces API key |
+| `api_secret` | `string` | **Required**. Your codeforces API secret |
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `handle`      | `string` | **Required**. individual user handle
+ 
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+
+## Appendix
+
+Any additional information goes here
+
+
+## Authors
+
+- [@samnoon1971](https://www.github.com/samnoon1971)
+
+
+## 🚀 About Me
+I'm a full stack developer... I am also a problem solver who loves math and puzzles.
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Screenshots
+
+Will be added soon.
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+
+## Documentation
+
+Will be added soon.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+
+## Installation
+
+Install contest-dashboard with npm
+
+```bash
+  npm install contest-dashboard
+  cd contest-dashboard
+```
+    
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/samnoon1971/Contest-Dashboard
+```
+
+Go to the project directory
+
+```bash
+  cd Contest-Dashboard
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Optimizations
+
+What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at fake@fake.com
+
+
+## Support
+
+For support, email samnoonabrar@gmail.com
+
+
+## Roadmap
+
+- Additional browser support
+
+- Add more integrations
+
+
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samnoon/)
+
